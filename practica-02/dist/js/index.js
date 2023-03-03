@@ -20,7 +20,7 @@ $(document).ready(
                 // Validaciones, dependiedo del input, sera el modal expuesto
                 // Si se llena los datos correctamente manda al dashboard
                 if (user == admin_user && password == admin_password)
-                    location.href = 'dashboard.html'
+                    location.href = './dashboard/dashboard.html'
                 else if (user == '' || password == '') {
                     Toast.fire({
                         icon: 'info',
