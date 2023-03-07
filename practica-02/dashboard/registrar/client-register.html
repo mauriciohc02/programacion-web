@@ -8,7 +8,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Registrar Producto</title>
+    <title>Registrar Cliente</title>
     <!-- Google Font: Source Sans Pro -->
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -81,8 +81,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
         <aside class="main-sidebar sidebar-dark-primary elevation-4">
             <!-- Brand Logo -->
             <a href="#" class="brand-link">
-                <img src="../../dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
-                    style="opacity: .8">
+                <img src="../../dist/img/AdminLTELogo.png" alt="AdminLTE Logo"
+                    class="brand-image img-circle elevation-3" style="opacity: .8">
                 <span class="brand-text font-weight-light">mauriciohc02.me</span>
             </a>
 
@@ -141,7 +141,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="./product-register.html" class="nav-link active">
+                                    <a href="./product-register.html" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Producto</p>
                                     </a>
@@ -153,7 +153,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="./client-register.html" class="nav-link">
+                                    <a href="./client-register.html" class="nav-link active">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Cliente</p>
                                     </a>
@@ -224,7 +224,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                 <div class="container-fluid">
                     <div class="row mb-2">
                         <div class="col-sm-6">
-                            <h1 class="m-0">Registrar Producto</h1>
+                            <h1 class="m-0">Registrar Cliente</h1>
                         </div><!-- /.col -->
                         <div class="col-sm-6">
                             <ol class="breadcrumb float-sm-right">
@@ -243,36 +243,56 @@ scratch. This page gets rid of all links and provides the needed markup only.
                     <!-- general form elements -->
                     <div class="card card-primary">
                         <div class="card-header">
-                            <h3 class="card-title">Nuevo Producto</h3>
+                            <h3 class="card-title">Nuevo Cliente</h3>
                         </div>
                         <!-- /.card-header -->
                         <!-- form start -->
                         <form>
                             <div class="card-body">
                                 <div class="form-group">
-                                    <label for="">Código</label>
-                                    <input type="number" class="form-control" id="code"
-                                        placeholder="Ingrese un código de producto">
+                                    <label for="">ID de Cliente</label>
+                                    <input type="number" class="form-control" id="key"
+                                        placeholder="Ingrese ID">
                                 </div>
                                 <div class="form-group">
                                     <label for="">Nombre</label>
                                     <input type="text" class="form-control" id="name"
-                                        placeholder="Ingrese nombre de producto">
+                                        placeholder="Ingrese nombre de cliente">
+                                </div>
+                                <div class="form-group">
+                                    <label for="">Apellido Paterno</label>
+                                    <input type="text" class="form-control" id="apaterno"
+                                        placeholder="Ingrese apellido paterno de cliente">
+                                </div>
+                                <div class="form-group">
+                                    <label for="">Apellido Materno</label>
+                                    <input type="text" class="form-control" id="amaterno"
+                                        placeholder="Ingrese apellido materno de cliente">
+                                </div>
+                                <div class="form-group">
+                                    <label for="">Correo Electrónico</label>
+                                    <input type="email" class="form-control" id="email"
+                                        placeholder="Ingrese email de cliente">
+                                </div>
+                                <div class="form-group">
+                                    <label for="">Teléfono</label>
+                                    <input type="number" class="form-control" id="telefono"
+                                        placeholder="Ingrese telefono de cliente">
+                                </div>
+                                <div class="form-group">
+                                    <label for="">Dirección</label>
+                                    <input type="text" class="form-control" id="direccion"
+                                        placeholder="Ingrese direccion de cliente">
+                                </div>
+                                <div class="form-group">
+                                    <label for="">RFC</label>
+                                    <input type="text" class="form-control" id="rfc"
+                                        placeholder="Ingrese RFC de cliente">
                                 </div>
                                 <div class="form-group">
                                     <label for="">Categoría</label>
-                                    <input type="text" class="form-control" id="category"
-                                        placeholder="Ingrese la categoría del producto">
-                                </div>
-                                <div class="form-group">
-                                    <label for="">Precio de Venta</label>
-                                    <input type="number" class="form-control" id="selling-price"
-                                        placeholder="Ingrese el precio de venta del producto">
-                                </div>
-                                <div class="form-group">
-                                    <label for="">Precio de Compra</label>
-                                    <input type="number" class="form-control" id="purchase-price"
-                                        placeholder="Ingrese el precio de compra del producto">
+                                    <input type="text" class="form-control" id="categoria"
+                                        placeholder="Ingrese categoria de cliente">
                                 </div>
                             </div>
                             <!-- /.card-body -->
@@ -322,7 +342,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <script src="../../dist/js/adminlte.min.js"></script>
     <!-- SweetAlert2 -->
     <script src="../../plugins/sweetalert2/sweetalert2.min.js"></script>
-    <script src="../../dist/js/product-register.js"></script>
+    <script src="../../dist/js/client-register.js"></script>
 </body>
 
 </html>

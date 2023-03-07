@@ -8,16 +8,18 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Registrar Producto</title>
+    <title>Tabla de Clientes</title>
     <!-- Google Font: Source Sans Pro -->
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
     <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="../../plugins/fontawesome-free/css/all.min.css">
+    <!-- DataTables -->
+    <link rel="stylesheet" href="../../plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" href="../../plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
+    <link rel="stylesheet" href="../../plugins/datatables-buttons/css/buttons.bootstrap4.min.css">
     <!-- Theme style -->
     <link rel="stylesheet" href="../../dist/css/adminlte.min.css">
-    <!-- SweetAlert2 -->
-    <link rel="stylesheet" href="../../plugins/sweetalert2-theme-bootstrap-4/bootstrap-4.min.css">
 </head>
 
 <body class="hold-transition sidebar-mini">
@@ -81,8 +83,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
         <aside class="main-sidebar sidebar-dark-primary elevation-4">
             <!-- Brand Logo -->
             <a href="#" class="brand-link">
-                <img src="../../dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
-                    style="opacity: .8">
+                <img src="../../dist/img/AdminLTELogo.png" alt="AdminLTE Logo"
+                    class="brand-image img-circle elevation-3" style="opacity: .8">
                 <span class="brand-text font-weight-light">mauriciohc02.me</span>
             </a>
 
@@ -125,8 +127,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                 </p>
                             </a>
                         </li>
-                        <li class="nav-item menu-open">
-                            <a href="#" class="nav-link active">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
                                 <i class="nav-icon fas fa-th"></i>
                                 <p>
                                     Registrar
@@ -135,45 +137,45 @@ scratch. This page gets rid of all links and provides the needed markup only.
                             </a>
                             <ul class="nav nav-treeview">
                                 <li class="nav-item">
-                                    <a href="./user-register.html" class="nav-link">
+                                    <a href="../registrar/user-register.html" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Usuario</p>
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="./product-register.html" class="nav-link active">
+                                    <a href="../registrar/product-register.html" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Producto</p>
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="./category-register.html" class="nav-link">
+                                    <a href="../registrar/category-register.html" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Categoría</p>
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="./client-register.html" class="nav-link">
+                                    <a href="../registrar/client-register.html" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Cliente</p>
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="./category-client.html" class="nav-link">
+                                    <a href="../registrar/category-client.html" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Categoría de Cliente</p>
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="./vendor-register.html" class="nav-link">
+                                    <a href="../registrar/vendor-register.html" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Proveedor</p>
                                     </a>
                                 </li>
                             </ul>
                         </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">
+                        <li class="nav-item menu-open">
+                            <a href="#" class="nav-link active">
                                 <i class="nav-icon fas fa-table"></i>
                                 <p>
                                     Tablas
@@ -182,19 +184,19 @@ scratch. This page gets rid of all links and provides the needed markup only.
                             </a>
                             <ul class="nav nav-treeview">
                                 <li class="nav-item">
-                                    <a href="../tablas/table-products.html" class="nav-link">
+                                    <a href="./table-products.html" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Productos</p>
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="../tablas/table-clients.html" class="nav-link">
+                                    <a href="./table-clients.html" class="nav-link active">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Clientes</p>
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="../tablas/table-vendors.html" class="nav-link">
+                                    <a href="./table-vendors.html" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Proveedores</p>
                                     </a>
@@ -224,12 +226,12 @@ scratch. This page gets rid of all links and provides the needed markup only.
                 <div class="container-fluid">
                     <div class="row mb-2">
                         <div class="col-sm-6">
-                            <h1 class="m-0">Registrar Producto</h1>
+                            <h1 class="m-0">Tabla de Clientes</h1>
                         </div><!-- /.col -->
                         <div class="col-sm-6">
                             <ol class="breadcrumb float-sm-right">
                                 <li class="breadcrumb-item"><a href="../dashboard.html">Home</a></li>
-                                <li class="breadcrumb-item active">Registrar</li>
+                                <li class="breadcrumb-item active">Tablas</li>
                             </ol>
                         </div><!-- /.col -->
                     </div><!-- /.row -->
@@ -240,49 +242,18 @@ scratch. This page gets rid of all links and provides the needed markup only.
             <!-- Main content -->
             <div class="content">
                 <div class="container-fluid">
-                    <!-- general form elements -->
-                    <div class="card card-primary">
+                    <div class="card">
                         <div class="card-header">
-                            <h3 class="card-title">Nuevo Producto</h3>
+                            <h3 class="card-title">Datos de Productos</h3>
                         </div>
                         <!-- /.card-header -->
-                        <!-- form start -->
-                        <form>
-                            <div class="card-body">
-                                <div class="form-group">
-                                    <label for="">Código</label>
-                                    <input type="number" class="form-control" id="code"
-                                        placeholder="Ingrese un código de producto">
-                                </div>
-                                <div class="form-group">
-                                    <label for="">Nombre</label>
-                                    <input type="text" class="form-control" id="name"
-                                        placeholder="Ingrese nombre de producto">
-                                </div>
-                                <div class="form-group">
-                                    <label for="">Categoría</label>
-                                    <input type="text" class="form-control" id="category"
-                                        placeholder="Ingrese la categoría del producto">
-                                </div>
-                                <div class="form-group">
-                                    <label for="">Precio de Venta</label>
-                                    <input type="number" class="form-control" id="selling-price"
-                                        placeholder="Ingrese el precio de venta del producto">
-                                </div>
-                                <div class="form-group">
-                                    <label for="">Precio de Compra</label>
-                                    <input type="number" class="form-control" id="purchase-price"
-                                        placeholder="Ingrese el precio de compra del producto">
-                                </div>
-                            </div>
-                            <!-- /.card-body -->
-
-                            <div class="card-footer">
-                                <button id="register-button" type="submit" class="btn btn-primary">Registrar</button>
-                            </div>
-                        </form>
+                        <div class="card-body">
+                            <table id="example1" class="table table-bordered table-striped">
+                                <!-- Aqui va el contenido -->
+                            </table>
+                        </div>
+                        <!-- /.card-body -->
                     </div>
-                    <!-- /.card -->
                 </div><!-- /.container-fluid -->
             </div>
             <!-- /.content -->
@@ -318,11 +289,40 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <script src="../../plugins/jquery/jquery.min.js"></script>
     <!-- Bootstrap 4 -->
     <script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- DataTables  & Plugins -->
+    <script src="../../plugins/datatables/jquery.dataTables.min.js"></script>
+    <script src="../../plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+    <script src="../../plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
+    <script src="../../plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
+    <script src="../../plugins/datatables-buttons/js/dataTables.buttons.min.js"></script>
+    <script src="../../plugins/datatables-buttons/js/buttons.bootstrap4.min.js"></script>
+    <script src="../../plugins/jszip/jszip.min.js"></script>
+    <script src="../../plugins/pdfmake/pdfmake.min.js"></script>
+    <script src="../../plugins/pdfmake/vfs_fonts.js"></script>
+    <script src="../../plugins/datatables-buttons/js/buttons.html5.min.js"></script>
+    <script src="../../plugins/datatables-buttons/js/buttons.print.min.js"></script>
+    <script src="../../plugins/datatables-buttons/js/buttons.colVis.min.js"></script>
     <!-- AdminLTE App -->
     <script src="../../dist/js/adminlte.min.js"></script>
-    <!-- SweetAlert2 -->
-    <script src="../../plugins/sweetalert2/sweetalert2.min.js"></script>
-    <script src="../../dist/js/product-register.js"></script>
+
+    <script src="../../dist/js/table-clients.js"></script>
+    <script>
+        $(function () {
+            $("#example1").DataTable({
+                "responsive": true, "lengthChange": false, "autoWidth": false,
+                "buttons": ["copy", "csv", "excel", "pdf", "print", "colvis"]
+            }).buttons().container().appendTo('#example1_wrapper .col-md-6:eq(0)');
+            $('#example2').DataTable({
+                "paging": true,
+                "lengthChange": false,
+                "searching": false,
+                "ordering": true,
+                "info": true,
+                "autoWidth": false,
+                "responsive": true,
+            });
+        });
+    </script>
 </body>
 
 </html>
