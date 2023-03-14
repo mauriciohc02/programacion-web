@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+    <link rel="stylesheet" href="./css/style-tabs.css">
+    <link rel="stylesheet" href="./css/style-gallery.css">
+    <title>Tabs</title>
+</head>
+
+<body>
+    <section class="section">
+        <div class="title">
+            <h2>¡Hola!</h2>
+            <p>
+                Bienvenido a la galería de imágenes
+            </p>
+        </div>
+
+        <div class="about-center section-center">
+            <article class="about-img">
+                <img id="image-tab" src="./images/breaking-bad.jpg" alt="" />
+            </article>
+            <article class="about">
+                <!-- btn container -->
+                <div class="btn-container">
+                    <button class="tab-btn active" data-id="breaking-bad">breaking bad</button>
+                    <button class="tab-btn" data-id="formula1">formula 1</button>
+                    <button class="tab-btn" data-id="monkeys">arctic monkeys</button>
+                </div>
+                <div class="about-content">
+                    <!-- single item -->
+                    <div class="content active" id="breaking-bad">
+                        <h4>Breaking Bad</h4>
+                        <p>
+                            Breaking Bad es una aclamada serie de televisión estadounidense
+                            que se emitió desde 2008 hasta 2013. La trama sigue la vida de
+                            Walter White, un profesor de química de secundaria que, tras ser
+                            diagnosticado con cáncer, decide producir metanfetamina para
+                            asegurar el futuro financiero de su familia. Con la ayuda de
+                            Jesse Pinkman, un exalumno problemático, Walter se adentra en el
+                            peligroso mundo del narcotráfico en Albuquerque, Nuevo México.
+                            La serie explora temas como la moralidad, la familia y las
+                            consecuencias de las decisiones tomadas en situaciones extremas.
+                            Breaking Bad es considerada como una de las mejores series de
+                            televisión de todos los tiempos.
+                        </p>
+                    </div>
+                    <!-- end of single item -->
+                    <!-- single item -->
+                    <div class="content" id="formula1">
+                        <h4>Formula 1</h4>
+                        <p>
+                            La Fórmula 1 es una categoría de automovilismo de velocidad que se
+                            lleva a cabo en circuitos especialmente diseñados para este deporte,
+                            en diferentes partes del mundo. Los equipos compiten con monoplazas
+                            diseñados específicamente para esta categoría, los cuales son
+                            construidos y mejorados constantemente por los ingenieros y mecánicos
+                            de cada equipo. Los pilotos compiten por el Campeonato Mundial de
+                            Fórmula 1, que se otorga al piloto que acumule la mayor cantidad de
+                            puntos al final de la temporada. La Fórmula 1 es conocida por ser una
+                            categoría de alto nivel técnico y competitivo, en la que se combinan
+                            habilidades de conducción, estrategia y tecnología de vanguardia.
+                        </p>
+                    </div>
+                    <!-- end of single item -->
+                    <!-- single item -->
+                    <div class="content" id="monkeys">
+                        <h4>Arctic Monkeys</h4>
+                        <p>
+                            Arctic Monkeys es una banda de rock británica formada en 2002 en
+                            Sheffield, Inglaterra. La banda se hizo popular en la década
+                            de 2000 gracias a su sonido enérgico y sus letras ingeniosas, que
+                            capturaron la atención del público y la crítica. Entre sus
+                            canciones más conocidas se encuentran "I Bet You Look Good on the
+                            Dancefloor", "Fluorescent Adolescent" y "Do I Wanna Know?". La banda
+                            ha experimentado con diferentes estilos y ha evolucionado a lo largo
+                            de los años, pero siempre ha mantenido su esencia rockera y distintiva.
+                            Arctic Monkeys es considerada como una de las bandas más influyentes e
+                            importantes de la música británica de los últimos años.
+                        </p>
+                    </div>
+                    <!-- end of single item -->
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- breaking-bad -->
+    <section class="section breaking-bad">
+        <img src="./images/bb-cooking.jpg" title="breaking-bad-1" class="img" data-id="1" alt="breaking-bad-1" />
+        <img src="./images/bb-labsuit.jpg" title="breaking-bad-2" class="img" data-id="2" alt="breaking-bad-2" />
+        <img src="./images/bb-laundry.jpg" title="breaking-bad-3" class="img" data-id="3" alt="breaking-bad-3" />
+        <img src="./images/bb-desert.jpg" title="breaking-bad-4" class="img" data-id="4" alt="breaking-bad-4" />
+        <img src="./images/bb-nice.jpg" title="breaking-bad-5" class="img" data-id="5" alt="breaking-bad-5" />
+    </section>
+    <!-- formula 1 -->
+    <section class="section f1">
+        <img src="./images/f1-aston-martin.jpg" title="f1-1" data-id="1" class="img" alt="f1-1" />
+        <img src="./images/f1-race.jpg" title="f1-2" data-id="2" class="img" alt="f1-2" />
+        <img src="./images/f1-racing.jpg" title="f1-3" data-id="3" class="img" alt="f1-3" />
+        <img src="./images/f1-redbull-mercedes.jpeg" title="f1-4" data-id="4" class="img" alt="f1-4" />
+        <img src="./images/f1-scuderia.jpg" title="f1-5" data-id="5" class="img" alt="f1-5" />
+    </section>
+    <!-- arctic monkeys -->
+    <section class="section monkeys">
+        <img src="./images/am-wpsiatwin.jpg" title="monkeys-1" data-id="1" class="img" alt="monkeys-1" />
+        <img src="./images/am-fwn.jpg" title="monkeys-2" data-id="2" class="img" alt="monkeys-2" />
+        <img src="./images/am-h.jpg" title="monkeys-3" data-id="3" class="img" alt="monkeys-3" />
+        <img src="./images/am-sins.jpg" title="monkeys-4" data-id="4" class="img" alt="monkeys-4" />
+        <img src="./images/am-am.jpg" title="monkeys-5" data-id="5" class="img" alt="monkeys-5" />
+        <img src="./images/am-tbhnc.jpg" title="monkeys-6" data-id="6" class="img" alt="monkeys-6" />
+        <img src="./images/am-tc.jpg" title="monkeys-7" data-id="7" class="img" alt="monkeys-7" />
+    </section>
+
+    <!-- modal -->
+    <div class="modal">
+        <button class="close-btn">
+            <i class="fas fa-times"></i>
+        </button>
+        <div class="modal-content">
+            <!-- prev next buttons -->
+            <button class="prev-btn">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="next-btn">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+            <!-- content -->
+            <img src="./images/background.jpg" class="main-img" alt="" />
+            <h3 class="image-name">image name</h3>
+            <div class="modal-images">
+                <img src="./images/background.jpg" title="city-1" id="1" class="modal-img" alt="" />
+                <img src="./images/background.jpg" title="city-2" id="2" class="modal-img selected" alt="" />
+            </div>
+        </div>
+    </div>
+
+    <!-- javascript -->
+    <script src="./js/app-tabs.js"></script>
+    <script src="./js/app-gallery.js"></script>
+</body>
+
+</html>
